@@ -1,0 +1,116 @@
+:root {
+  --main-color: #ff9800;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+/*  start setting box */
+.setting-box {
+  position: fixed;
+  z-index: 100;
+  left: -200px;
+  top: 0;
+  width: 200px;
+  min-height: 100vh;
+  background-color: #fff;
+  transition: .3s;
+
+}
+.setting-box.open {
+  left: 0;
+}
+.setting-box .toggel-icon {
+  position: absolute;
+  right: -30px;
+  top: 100px;
+  background-color: #fff;
+
+  text-align: center;
+  cursor: pointer;
+
+}
+.setting-box .toggel-icon i  {
+ 
+  width: 30px;
+  padding: 5px 0;
+
+
+}
+.setting-box .setting-content {
+ 
+}
+/*  End setting box */
+
+/* Start Landing Page */
+.landing-page {
+  min-height: 100vh;
+  background-image: url("../imgs/01.jpg");
+  background-size: cover;
+  position: relative;
+}
+.landing-page .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.landing-page .header-area {
+  position: relative;
+  color: #fff;
+  z-index: 2;
+  display: flex;
+  padding: 10px;
+}
+.landing-page .header-area .logo {
+  width: 300px;
+  padding: 15px;
+
+  font-weight: bold;
+}
+.landing-page .header-area .links {
+  list-style: none;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 20px;
+  text-align: right;
+  font-size: 15px;
+}
+
+.landing-page .header-area .links li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.landing-page .header-area .links li a {
+  color: #fff;
+  text-decoration: none;
+  transition: .3s;
+}
+.landing-page .header-area .links li a:hover,
+.landing-page .header-area .links li a.active {
+  color: var(--main-color);
+}
+.introduction-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+}
+.introduction-text h1 {
+  font-size: 34px;
+  margin: 0 0 10px;
+}
+.introduction-text span {
+  color: var(--main-color);
+}
+.introduction-text p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 0;
+}
+/* End Landing Page */
